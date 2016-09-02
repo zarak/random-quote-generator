@@ -1,6 +1,6 @@
 function get_quote() {
   $.ajax({
-    url: "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=",
+    url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=",
     success: function(json) {
       var quote = json[0].content;
       var author = json[0].title;
